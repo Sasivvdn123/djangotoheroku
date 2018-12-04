@@ -82,12 +82,10 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 #    }
 #}
 import dj_database_url
-DEBUG = config('DEBUG', default=False, cast=bool)
-DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL')
-    )
-}
+
+db_from_env = dj_database_url.config()
+DATABASES[‘default’].update(db_from_env)
+
 
 
 # Password validation
