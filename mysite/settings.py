@@ -25,7 +25,7 @@ SECRET_KEY = 'ltef7v(uf$xzu2o4)y!t3%_%va*y@&99srfv!7=ire^r$x99!0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['secret-sea-91116.herokuapp.com']
 
 
 # Application definition
